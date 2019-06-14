@@ -1,0 +1,255 @@
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+a {
+    text-decoration: none;
+    }
+
+
+/* --Header-- */
+
+header {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom left, #5c4789, #29116d);
+    display: flex;
+    flex-direction: column;
+    }
+
+
+/* --Footer-- */
+
+footer {
+    width: 100%;
+    background: linear-gradient(to bottom left, #5c4789, #29116d);
+    display: flex;
+    flex-direction: column;
+    -webkit-clip-path: polygon(0 18%, 100% 6%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 18%, 100% 6%, 100% 100%, 0% 100%);
+    }
+
+.footer_inner { 
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+    }
+
+
+/* --Conteiner-- */
+
+.conteiner {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+
+/* --Nav-- */
+
+.top_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    }   
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    }
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .1s linear;
+    }
+
+.nav_sign_up {
+    margin-left: 25px;
+    background-color: #fff;
+    color: #636363;
+    padding: 10px;
+    border-radius: 5px;
+    }   
+
+.nav_login {
+    color: white;
+    }
+
+.map_icon {
+     margin: 0px 1px -6px 40px;
+    }
+
+
+/* --Intro-- */
+
+.intro_inner {
+    width: 80%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+.intro_title {
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.2;
+    }
+
+
+.intro_suptitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    }
+
+.intro_inner > img {
+    margin-top: 100px;
+    width: 215px;
+    }
+
+
+/* --Trust-- */
+
+.trust_secton {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+.trust_secton > img {
+    width: 150px;
+    margin: 40px;
+    }
+
+
+/* --We Work--  */
+
+.wework_sec {
+    padding: 145px 0px;
+    color: white;
+    }
+
+.wework_offer{
+    -webkit-clip-path: polygon(0 24%, 100% 13%, 100% 88%, 0 100%);
+    clip-path: polygon(0 24%, 100% 13%, 100% 88%, 0 100%);
+    background: linear-gradient(to bottom left, rgba(94,73,138,0.7), rgba(41,17,109)), url(../images/image-we-work@2x.jpg)  center no-repeat;
+    height: 600px;
+    text-align: center;
+    background-size: cover;
+    }
+   
+.wework_title {
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.2;
+    }
+
+.wework_suptitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    }
+  
+
+/* --Button-- */
+
+.input {
+    border: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    border-radius: 3px 0px 0px 3px;
+    }
+
+.btn_sub {
+    color: white;
+    background-color: #296cfc;
+    border: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    border-radius: 0px 3px 3px 0px;
+    margin-left: -4px;
+    }
+
+/* --Features-- */
+
+.features_component {
+    width: 580px;
+    margin: 0 auto;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    }
+
+.left {
+    margin-right: 16%;
+    text-align: right;
+    }
+
+
+
+ @media only screen and (max-width: 1270px) {
+.top_nav {
+    display: none;
+    }
+      
+}
+
+/* --Media-- */
+
+@media only screen and (max-width: 768px) {         
+        .btn_sub{
+            margin-top: 30px;
+           }
+        .features_component {
+            flex-wrap: wrap;
+            max-width: 230px;
+            justify-content: center;
+        }
+          
+      }
+
+@media only screen and (max-width: 590px) {         
+        .btn_sub{
+            margin-top: 30px;
+           }
+        .features_component {
+            flex-wrap: wrap;
+            max-width: 180px;
+            justify-content: center;
+        }
+          
+      }
+
+@media only screen and (max-width: 320px) {
+        
+        .left{
+            margin-right: 2%
+        }
+
+        .features_component {
+            flex-wrap: wrap;
+            max-width: 180px;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 11px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+           
+      }
